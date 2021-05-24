@@ -1,0 +1,118 @@
+{% extends 'home/base.html' %}
+{% block title %}Programmers Club{% endblock title %}
+{% block body %}
+<section class="jumbotron text-center">
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4"><b> { PROGRAMMERS CLUB }</b></h1>
+      <p class="lead">
+      <h5>Coding is an Art.</h5>
+      </p>
+      <hr class="my-4">
+      <img src="static/img/logo1.png" alt="logo" width="120">
+      <h1 class="jumbotron-heading"><span id="typed"></span></h1>
+      <p class="lead text-muted">This blog helps to explore the coding solutions which were conducted in the contest.
+        This will increase their competance.<br>Students can able to view the code and learn it post the contest. This
+        helps them to enhance their coding skills, problem-solving skills and analytical skills.</p>
+      <p>
+        <a href="/blog" class="btn btn-info my-2">Browse Blog</a>
+        <a href="/" class="btn btn-info my-2">Browse Resources</a>
+      </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
+    <script>
+      window.onload = function () {
+        console.log("loaded")
+        var typed = new Typed('#typed', {
+          strings: ["Welcome to HackWithSRIT", "Learn Programming", "Compete", "Practice", "Experiment", "Explore coding questions with solutions..."],
+          backSpeed: 15,
+          smartBackspace: true,
+          backDelay: 1200,
+          startDelay: 1000,
+          typeSpeed: 25,
+          loop: true,
+        });
+      };
+    </script>
+</section>
+<section>
+  <u>
+    <h2 style="text-align: center;">Our Posts</h2>
+  </u>
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row my-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">#H@ckWithSRIT_2</strong>
+            <h3 class="mb-0">String Problem</h3>
+            <div class="mb-1 text-muted">Mar 25<sup>th</sup> 2021</div>
+            <p class="card-text mb-auto">This Post provides solution on how to remove spaces from a given String.</p>
+            <div class="my-2">
+            <a href="#" role="button" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row my-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">#H@ckWithSRIT_2</strong>
+            <h3 class="mb-0">Array Problem</h3>
+            <div class="mb-1 text-muted">Mar 25<sup>th</sup> 2021</div>
+            <p class="mb-auto">This Post provides solution on how to add elements in an array.</p>
+            <div class="my-2">
+            <a href="#" role="button" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row my-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">#H@ckWithSRIT_1</strong>
+            <h3 class="mb-0">String Problem</h3>
+            <div class="mb-1 text-muted">Mar 17<sup>th</sup> 2021</div>
+            <p class="card-text mb-auto">This Post provides solution on how to remove spaces from a given String.</p>
+            <div class="my-2">
+            <a href="#" role="button" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row my-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">#H@ckWithSRIT_1</strong>
+            <h3 class="mb-0">Array Problem</h3>
+            <div class="mb-1 text-muted">Mar 17<sup>th</sup> 2021</div>
+            <p class="mb-auto">This Post provides solution on how to add elements in an array.</p>
+            <div class="my-2">
+            <a href="#" role="button" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+{% endblock body %}
